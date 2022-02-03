@@ -56,7 +56,7 @@ const getBlockPolicyState = (domains) => {
   areAllDomainsBlocked = numBlockedDomains === numDomains ? true : false;
   anyBlockedDomain = numBlockedDomains >= 1 ? true : false;
 
-  return { areAllDomainsBlocked };
+  return { areAllDomainsBlocked, anyBlockedDomain };
 };
 
 (function () {
